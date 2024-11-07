@@ -1,7 +1,7 @@
 #pragma once
 #include <cstring>
-
-class direccion{
+using namespace std;
+class Direccion{
 private:
     string domicilio;
     int altura;
@@ -34,7 +34,4 @@ public:
 
     void cargar();
     void mostrar();
-
-
-
 };

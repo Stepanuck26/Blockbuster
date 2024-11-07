@@ -11,8 +11,10 @@ int main()
     ///Persona obj;
     ///Vendedor obj;
     Cliente obj;
-    obj.cargar();
+    Direccion k;
+    k.cargar();
+    obj.setDireccion(k);
     obj.mostrar();
-    cout << "Hello world!" << endl;
+
     return 0;
 }

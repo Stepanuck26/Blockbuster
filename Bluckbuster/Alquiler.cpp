@@ -4,7 +4,7 @@ using namespace std;
 #include "Alquiler.h"
 
 void Alquiler::cargar(){
-    corte=true;
+    bool corte=true;
     int cantidad=0;
     Alquiler aq;
     do{
@@ -19,8 +19,8 @@ void Alquiler::cargar(){
      cout<<"Envio: S - Si || N - No" <<endl;
      cin>>envio;
 
-     }
+
     }while(corte=true);
 
-    cout<<"Id:
+    cout<<"Id:";
 }

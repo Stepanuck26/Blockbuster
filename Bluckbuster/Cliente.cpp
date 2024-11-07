@@ -2,12 +2,14 @@
 #include <cstdlib>
 #include <cstring>
 #include "Cliente.h"
+#include "Persona.h"
+#include "Direccion.h"
 
 void Cliente::cargar(){
     Persona::cargar();
     cin.ignore();
-    cout<<"Ingrese el domicilio: "<<endl;
-    getline(cin,domicilio);
+    domicilio.cargar();
+    cin.ignore();
     cout<<"Ingrese su telefono: "<<endl;
     getline(cin,telefono);
     cout<<"Ingrese su mail: "<<endl;
@@ -18,7 +20,7 @@ void Cliente::cargar(){
 
 void Cliente::mostrar(){
     Persona::mostrar();
-    cout<<"Domicilio :"<<domicilio<<endl;
+    domicilio.mostrar();
     cout<<"Telefono :"<<telefono<<endl;
     cout<<"Mail :"<<mail<<endl;
     cout<<"Genero favorito :"<<genero_favorito<<endl;

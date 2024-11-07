@@ -19,6 +19,12 @@ public:
     void setIngreso(float i){ingreso=i;}
     float getIngreso(){return ingreso;}
 
+    void setTelefono(string t){telefono=t;}
+    string getTelefono(){return telefono;}
+
+    void setEmail(string e){mail=e;}
+    string getEmail(){return mail;}
+
     void cargar();
     void mostrar();
 };
